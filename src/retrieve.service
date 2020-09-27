@@ -1,0 +1,14 @@
+Description=user retrieve info service
+After=network.target
+StartLimitIntervalSec=0
+
+[Service]
+Type=simple
+Restart=always
+RestartSec=1
+User=zaheer
+ExecStart=$DIR/GSWL_TP1_User_Management/script/retrieve.sh
+
+[Install]
+WantedBy=multi-user.target
+
